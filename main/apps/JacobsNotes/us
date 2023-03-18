@@ -1,0 +1,6 @@
+#my first shell script
+if [[$1 =~ cmd]]; then 
+	echo "$(<us-cm.txt)"
+else
+	echo "ERROR: no arguments given"
+fi

@@ -1,0 +1,9 @@
+Package: Notes
+Version: 1.1
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 1024
+Maintainer: mastercoder1323.github.io
+Description: Multiple notes for any linux terminal user that include how to make a deb, common cammands, & useful packages. The commands included are $ us-cm for useful comands, $ ht-mk-deb for how to make a debian package, $ us-packages for useful packages, & $ su-apt-inst for the most used comande for sudo, apt, and install.

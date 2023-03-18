@@ -1,0 +1,56 @@
+#usfl script
+ask(){
+	echo "
+
+
+What kind of useful information would you like?
+exit     | quit
+cmd      | useful commands
+pkg      | useful packages
+sudo-apt | how to use sudo and apt
+enter your answer on the following prompt"
+
+	read -p "Enter your choice HERE ->>" selection
+	echo "
+
+"
+	$selection
+}
+
+ht-use(){
+	echo This command is made to help you
+	ask
+}
+cmd(){
+	echo Here are some useful comands:
+	echo "
+whatis (command)       | this gives you a one line answer about command
+help (command)         | this gives you a full answer about (command)
+(command) --help       | this does the same as the above
+mkdir (name)           | this makes a directory called (name)
+rmdir (name)           | this removes a directory called (name)
+cd (directoryname)     | this changes the current directory to (directoryname)
+ls [-l, -a ,-la]       | this lists the files. -l is full info, -a includes hidden files, -la is both
+touch (name)           | makes a file called name
+file (filename)        | tells you what kind of file is (filename)
+open (file-or-url)     | opens a file or url
+nano (textfile)        | edit a text file. you may need to install nano
+sudo-apt-install-dpkg  | enter the sudo-apt in the prompt"
+	ask
+}
+pkg(){
+	echo Here are some useful packages
+	echo "These are the commands on how to install them and what they do
+$ sudo apt install build-essential  | the build essential package helps you compile c and c++ code
+$ sudo apt install nano             | this is a simple text editor
+$ sudo apt gnome-software           | this is a good linux app store"
+	ask
+}
+sudo-apt(){
+	echo Use these commands with sudo and apt:
+	echo "
+list (name)    | this lists the available packages based on name
+search (thing) | searches the thing in package descriptions"
+	ask
+}
+ask

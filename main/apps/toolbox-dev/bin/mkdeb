@@ -1,0 +1,11 @@
+#bash
+clear
+echo Welcome to the Debian packagemaker
+read -p "Please enter the Final name for your package or type q to quit -->>" pname
+case $pname;
+    q) quit;
+    *) ;
+fi
+read -p "Please enter the folder that containsyour code -->>" cdir
+read -p "would you like to continue and make the package [y/n]-->>"
+case 

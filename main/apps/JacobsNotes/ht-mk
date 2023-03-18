@@ -1,0 +1,28 @@
+ask(){
+	echo "Chose what you want to learn how to make:
+deb       | debian packages
+script    | a bash script
+cc-code   | c++ and c compiled code scripts
+exit      | quit the program"
+	read -p "Enter your reply here:-->>" choice
+	$choice
+}
+deb(){
+	echo "--------------------------------------
+This is how to make a debian package:
+-------------------------------------"
+	ask
+}
+script(){
+	echo "--------------------------------------
+This is how to make a bash script:
+-------------------------------------"
+	ask
+}
+cc-code(){
+	echo "--------------------------------------
+This is how to make a c or c++ script:
+-------------------------------------"
+	ask
+}
+ask
