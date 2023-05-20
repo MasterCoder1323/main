@@ -22,9 +22,11 @@ h1,h4
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="../libraries/canvasTools.js"></script>
 	<title>Moving Rover On</title>
 </head>
-<body onload="add();">
+<body onload="canvas.start();
+rover.start()">
 <center>
 <h1>Moving Rover On Mars</h1>
 	<canvas id="myCanvas" width="800" height="600"></canvas>
