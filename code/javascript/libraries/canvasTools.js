@@ -1,6 +1,7 @@
 function jcanvas(id = "myCanvas", backgroundImg = "imgName"){
     this.properties1 = document.getElementById(id);
     this.ctx = this.properties1.getContext("2d");
+    if(backgroundImg !== null){
     this.backgroundIMG = backgroundImg;
     this.start = function(){
         this.ctx.drawImage(this.backgroundTag,0,0,this.properties1.width, this.properties1.height);
@@ -8,6 +9,7 @@ function jcanvas(id = "myCanvas", backgroundImg = "imgName"){
     this.backgroundTag = new Image();
     this.backgroundTag.src = this.backgroundIMG;
     this.backgroundTag.onload = this.start();
+    }
 };
 function jsprite(x = 0,y = 0,width = 100,height = 100,image = "img", location = jcanvas){
     this.width = width;
@@ -23,7 +25,9 @@ function jsprite(x = 0,y = 0,width = 100,height = 100,image = "img", location = 
         this.imageTag.onload = this.draw();
     },
     this.draw = function(){
+        if(this.canvas.star !== null){
         this.canvas.start();
+        }
         this.canvas.ctx.drawImage(this.imageTag,this.x,this.y,this.width,this.height);
     },
     this.up = function(px = 10){
