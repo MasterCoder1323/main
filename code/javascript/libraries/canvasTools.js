@@ -1,8 +1,15 @@
-function canvas(id = "myCanvas"){
+function jcanvas(id = "myCanvas", img){
     this.properties1 = document.getElementById(id);
     this.ctx = this.properties1.getContext("2d");
+    this.backgroundIMG = img;
+    this.backgroundTag = new Image();
+    this.backgroundTag.src = this.backgroundIMG;
+    this.backgroundTag.onload = this.start();
+    this.start = function(){
+        this.ctx.drawImage(this.backgroundTag,0,0,this.properties1.width, this.properties1.height);
+    }
 };
-function sprite(x,y,width,height,image, location){
+function jsprite(x,y,width,height,image, location){
     this.width = width;
     this.height = height;
     this.image = image;
