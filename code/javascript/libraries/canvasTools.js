@@ -29,6 +29,7 @@ function jsprite(x = 0,y = 0,width = 100,height = 100,image = "img", location = 
         this.canvas.start();
         }
         this.canvas.ctx.drawImage(this.imageTag,this.x,this.y,this.width,this.height);
+        console.log(this.x + "," + this.y);
     },
     this.up = function(px = 10){
         if(this.y >=0){
