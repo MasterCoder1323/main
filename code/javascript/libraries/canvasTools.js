@@ -1,8 +1,9 @@
 function jcanvas(id = "myCanvas", backgroundImg = "imgName"){
     this.properties1 = document.getElementById(id);
     this.ctx = this.properties1.getContext("2d");
+    //this.fabric = fabric.canvas(id);
     if(backgroundImg !== null){
-    this.backgroundIMG = backgroundImg;
+        this.backgroundIMG = backgroundImg;
     this.start = function(){
         this.ctx.drawImage(this.backgroundTag,0,0,this.properties1.width, this.properties1.height);
     }
