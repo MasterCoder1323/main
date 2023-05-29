@@ -1,6 +1,3 @@
-//Import jFabric
-import { jFabric} from '../libraries/fabricTools.js';
-
 //Code
 var canvas = new jFabric.canvas("myCanvas");
 var player = new jFabric.sprite(10, 10, 140, 150, "player.png", canvas, "player");
@@ -36,19 +33,19 @@ function minecraftKeyPress(e) {
     }
     //moving keys
     if (keyCode == "38") {
-        player.up();
+        player.up(10);
         console.log("Player went Up");
     }
     if (keyCode == "40") {
-        player.down();
+        player.down(10);
         console.log("Player went Down");
     }
     if (keyCode == "37") {
-        player.left();
+        player.left(10);
         console.log("Player went Left");
     }
     if (keyCode == "39") {
-        player.right();
+        player.right(10);
         console.log("Player went Right");
     }
     //block image keys

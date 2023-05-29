@@ -1,17 +1,16 @@
 //Imports
 
-
 //Functions
-const jFabric = {
+var jFabric = {
     canvas: function(id, backgroundImg) {
         this.properties1 = document.getElementById(id);
         this.ctx = this.properties1.getContext("2d");
-        this.fabric = fabric.canvas(id);
+        this.fabric = jFabric.realFabric.canvas(id);
         if (backgroundImg !== null) {
             this.addImage(0, 0, this.properties1.width, this.properties1.height, backgroundImg, this)
         }
         this.addImage = function(x = 10, y = 10, width = 100, height = 100, url = URL) {
-            fabric.Image.fromURL(url, function(Img) {
+            jFabric.realFabric.Image.fromURL(url, function(Img) {
                 var Image = Img;
                 Image.scaleToWidth(width);
                 Image.scaleToHeight(height);
@@ -35,7 +34,7 @@ const jFabric = {
         this.spriteID = "sprite_" + idNum
         this.draw = function() {
             this.fabric.remove(this.spriteID);
-            fabric.Image.fromURL(url, function(Img) {
+            jFabric.realFabric.Image.fromURL(url, function(Img) {
                 var Image = Img;
                 Image.scaleToWidth(width);
                 Image.scaleToHeight(height);
@@ -74,8 +73,17 @@ const jFabric = {
     }
 };
 
-export { jFabric }
+export default jFabric;
 /*
 To Import add:
-	
+
+
+var script = document.createElement('script'); 
+script.src = '/libraries/fabric.js'; 
+script.onload = function() {  
+    jFabric.realFabric = fabric;
+}; 
+document.head.appendChild(script);
+import jFabric from '../libraries/fabricTools.js';
+
 */
