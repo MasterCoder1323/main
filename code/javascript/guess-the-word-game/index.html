@@ -10,9 +10,9 @@
 
 <link rel="stylesheet" type="text/css" href="game.css">
 
-<script src="game_login.js"></script>
+<script src="main.js"></script>
 </head>
-<body>
+<body onload="getData();" beforeunload="save();">
 	<center>
 	<h1>Guess the Word!</h1>
 	<h3 id="player1Name"></h3><span id="player1Score"></span>
