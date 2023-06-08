@@ -1,3 +1,6 @@
-body{
-    align-content: center;
+body{  
+    text-align: center;
+}
+.align-left{
+    text-align: left;
 }

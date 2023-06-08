@@ -18,11 +18,16 @@
 	<h3 id="player1Name"></h3><span id="player1Score"></span>
 	<br>
 	<h3 id="player2Name"></h3><span id="player2Score"></span>
-	<div id="answerArea">
+	<div id="output" class="col-xs-6">
 
 	</div>
 	<div id="questionArea">
+		<h3 id="questionTurn"></h3>
 		<label>Send your word: <b style="color:red">Try putting a word with at least 5 letters</b></label>
+		<br>
+		<input type="text" placeholder="Enter your word" id="wordInput">
+		<br><br>
+		<button onclick="send();" class="btn btn-success">Send</button>
 	</div>
 </center>
 </body>

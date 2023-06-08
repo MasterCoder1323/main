@@ -13,7 +13,7 @@
 		<script src="main.js"></script>
 	</head>
 	<body>
-		<nav class="navbar-inverse my_nav_bar">
+		<nav class="navbar-inverse my_nav_bar navbar-fixed-top">
 			<div class="navbar-header">
 	
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
@@ -33,13 +33,13 @@
 				</ul>
 			</div>
 		</nav>
-		<center>
-			
+		
+			<br> <br> <br> <br>
 			<h1 class="btn btn-success" style="font-size: 3em;">
 				The Javascript Console
 			</h1>
 			<br><br>
-			<section class="container bg-danger">
+			<section class="container bg-danger" style="padding-bottom: 2em;">
 				<h1 class="btn btn-primary" style="font-size: 2em;">
 					Introduction
 				</h1>
@@ -59,7 +59,7 @@
 				</div>
 			</section>
 			<br><br>
-			<section class="container bg-warning" style="padding-bottom: 2em;">
+			<section class="container bg-warning" id="VScode" style="padding-bottom: 2em;">
 				<h1 class="btn btn-primary" style="font-size: 2em;">
 					VS Code
 				</h1>
@@ -96,11 +96,94 @@
 					</h1>
 					<p>
 
+Getting started with Visual Studio Code<br>
+Video outline <br>
+Open a folder. File > Open Folder (Ctrl+K Ctrl+O)<br>
+File Explorer. View > Explorer (Ctrl+Shift+E)<br>
+Search view. View > Search (Ctrl+Shift+F) <br>
+Source Control. View > Source Control (SCM) (Ctrl+Shift+G) <br> 
+View > Run (Ctrl+Shift+D) <br>
+Extensions view. View > Extensions (Ctrl+Shift+X) <br>
+Open the Command Palette. ... <br>
+Output panel. <br>
 					</p>
 				</div>
-				<img src="" class="col-md-6 col-xs-12">
+				<iframe src="https://www.microsoft.com/videoplayer/embed/RE4M6Vx" class="col-md-6 col-xs-12" height="300px"></iframe>
 			</div>
 			</section>
-		</center>
+
+			<section class="container bg-success" id="LiveServer" style="padding-bottom: 2em;">
+				<h1 class="btn btn-primary" style="font-size: 2em;">
+					Live Server
+				</h1>
+				<br> <br> <br>
+				<img height="75%" src="https://ritwickdey.gallerycdn.vsassets.io/extensions/ritwickdey/liveserver/5.7.9/1661914858952/Microsoft.VisualStudio.Services.Icons.Default" class="col-md-6 col-xs-12">
+				<div class="col-md-6 col-xs-12">
+					<h1>How to use Live Server</h1>
+					Open the extentions pallet and search live server. <br>
+					Install it, and press go live to test it.
+				</div>
+			</section>
+
+			<section class="container bg-primary" id="ConsoleCode" style="padding-bottom: 2em;">
+				<h1 class="btn btn-primary" style="font-size: 2em;">
+					Console Commands
+				</h1>
+				<br> <br>
+				<div class="col-md-6 col-xs-12">
+					<h1>
+						How to Write to the Console
+					</h1>
+					<p>
+						to open press ctrl + shift + i and select consoe on the top bar
+					</p>
+					<ul>
+						<li><code>console.log("text");</code></li>
+						<li><code>console.log(variable);</code></li>
+						<li><code>console.log("text" + variable + "more text");</code></li>
+						<li><code>console.clear();//this cleares the console</code></li>
+						<li><code>//this is a comment, and it is not read by the computer</code></li>
+					</ul>
+				</div>
+				<img src="data:image/jpeg;base64,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" class="col-md-6 col-xs-12">
+			</section>
+			<br>
+			<section class="bg-danger container" style="padding-bottom: 2em;" id="Examples">
+				<h1 class="btn btn-primary" style="font-size: 2em;">
+					Examples
+				</h1>
+				<br><br><br>
+				<img src="https://content.codecademy.com/articles/running-js-in-the-browser/calling_function.png" class="col-md-6 col-xs-12">
+				<div class="col-md-6 col-xs-12">
+					<h1>Check it Out</h1>
+					<code class="align-left">
+						function printMessage(){<br>
+							let word1 = "magic";<br>
+							let word2 = "spell";<br>
+							let num1 = 12;<br>
+							let num2 = 13;<br>
+							let doubleWord = word1.concat(word2);<br>
+							let multiply = num1 * num2;<br>
+							let divide = num2/num1;<br>
+							let add = num1 + num2;<br>
+							let subtract = num1 - num2;<br>
+							//Print the messages <br>
+							console.clear();<br>
+							console.log("Hi I'm the Console");<br>
+							console.log("Word1: " + word1 + "   Word2: " + word2);<br>
+							console.log("Double Word:  " + doubleWord);<br>
+							console.log("Num1: " + num1 + "   Num2: " + num2);<br>
+							console.log("Multiply: " + multiply + "   Divide: " + divide);<br>
+							console.log("Add: " + add + "   Subtract: " + subtract);<br>
+							console.log("Bye...");<br>
+						}<br>
+					</code>
+					<br>
+					<button onclick="printMessage();" class="btn btn-success">
+						Print
+					</button>
+				</div>
+			</section>
+		
 	</body>
 </html>
